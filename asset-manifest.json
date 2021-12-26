@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/arana-website/static/css/main.3d1647a2.css",
+    "main.js": "/arana-website/static/js/main.805918e0.js",
+    "static/js/787.8e33160a.chunk.js": "/arana-website/static/js/787.8e33160a.chunk.js",
+    "static/media/Screen Shot 2021-12-25 at 6.23.41 PM.png": "/arana-website/static/media/Screen Shot 2021-12-25 at 6.23.41 PM.403bf21d95843bd6769c.png",
+    "static/media/Allison_Script.otf": "/arana-website/static/media/Allison_Script.8b1a5ada1a7f717779e6.otf",
+    "static/media/landingbackground.png": "/arana-website/static/media/landingbackground.40873f64350ab54f8948.png",
+    "index.html": "/arana-website/index.html",
+    "main.3d1647a2.css.map": "/arana-website/static/css/main.3d1647a2.css.map",
+    "main.805918e0.js.map": "/arana-website/static/js/main.805918e0.js.map",
+    "787.8e33160a.chunk.js.map": "/arana-website/static/js/787.8e33160a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d1647a2.css",
+    "static/js/main.805918e0.js"
+  ]
+}
