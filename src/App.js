@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import sample from './components/landingbackground.png';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import AboutMe from './AboutMe/AboutMe';
+import Blog from './Blog/Blog';
+import Resume from './Resume/Resume';
+import Typewriter from 'typewriter-effect';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+      <h2><Typewriter
+        options={{
+          strings: ['Hello There!','I am Aparajita, welcome to my website :)'],
+          autoStart: true,
+          loop: true,
+        }}
+      /></h2>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/AboutMe">
+            <AboutMe />
+          </Route>
+          <Route path="/Blog">
+            <Blog />
+          </Route>
+          <Route path="/Resume">
+            <Resume />
+          </Route>
+          <Route path="/">
+        </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+function Home() {
+  return <h2>Home</h2>;
+}
